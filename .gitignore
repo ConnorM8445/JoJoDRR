@@ -3481,3 +3481,6 @@ ProjectSettings/TimeManager.asset
 ProjectSettings/UnityConnectSettings.asset
 ProjectSettings/VFXManager.asset
 ProjectSettings/XRSettings.asset
+*.bakert
+Library/EditorInstance.json
+Temp/UnityLockfile
