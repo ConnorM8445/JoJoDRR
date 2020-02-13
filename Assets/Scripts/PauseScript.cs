@@ -12,6 +12,7 @@ public class PauseScript : MonoBehaviour
     public GameObject settingsMenuUI;
     public GameObject controlsMenuUI;
     public GameObject videoMenuUI;
+    public GameObject backgroundDim;
     void Update()
     {
         //when escape key is pressed, will either pause or unpause the game
@@ -30,6 +31,7 @@ public class PauseScript : MonoBehaviour
     public void Resume()
     {
         //unpauses the game
+        backgroundDim.SetActive(false);
         pauseMenuUI.SetActive(false);
         settingsMenuUI.SetActive(false);
         Time.timeScale = 1f;
@@ -38,6 +40,7 @@ public class PauseScript : MonoBehaviour
     void Pause()
     {
         //pauses the game
+        backgroundDim.SetActive(true);
         pauseMenuUI.SetActive(true);
         Time.timeScale = 0f;
         pauseActive = true;
